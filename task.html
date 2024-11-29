@@ -59,9 +59,11 @@
                 <p class="price" id="price">Price: ₹1500</p>
                 <div class="quantity-selector mt-3 d-flex justify-content-center align-items-center ">
                     <div class="quantity-buttons">
-                        <button id="minus" class="btnn">-</button> 
+                        <button id="minus" class="btnn">-</button>
                     </div>
-                    <input type="text" id="quantity" class="quantity-display mx-2 " value="1">
+                    <input type="text" id="quantity" class="quantity-display mx-2 " aria-live="polite"
+                        data-bs-step="counter" name="quantity" title="quantity" value="1" min="0" max="10" step="1"
+                        data-bs-round="0" aria-label="Quantity selector">
                     <div class="quantity-buttons">
                         <button id="plus" class="btnn">+</button>
                     </div>
